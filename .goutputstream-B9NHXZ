@@ -83,7 +83,7 @@ int main()
 	using std::cout;
 	using std::endl;
 	int last_input = -1; //null
-	bool exit;
+	bool exit = false;
 	
 	wiringPiSetup();
 	
@@ -95,7 +95,6 @@ int main()
 	pinMode(BACK_RIGHT_FORWARD, OUTPUT);
 	pinMode(BACK_LEFT_FORWARD, OUTPUT);
 	pinMode(BACK_LEFT_BACKWARD, OUTPUT);
-	
 	
 	while(!exit)
 	{
@@ -125,7 +124,7 @@ int main()
 			stopMove(last_input);
 		}
 		
-		delay(10);
+		delay(100);
 		
 	}
 	
