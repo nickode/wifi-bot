@@ -79,7 +79,7 @@ try:
             rotateRight()
         elif char == curses.KEY_LEFT:
             rotateLeft()
-        else
+        else:
             stopMove()
 finally:
     curses.nocbreak(); screen.keypad(0); curses.echo()
