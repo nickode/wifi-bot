@@ -74,19 +74,14 @@ try:
             break
         elif char == curses.KEY_UP:
             moveForward()
-            break
         elif char == curses.KEY_DOWN:
             moveBackward()
-            break
         elif char == curses.KEY_RIGHT:
             rotateRight()
-            break
         elif char == curses.KEY_LEFT:
             rotateLeft()
-            break
         elif char == 10:
             stopMove()
-            break
 finally:
     curses.nocbreak(); screen.keypad(0); curses.echo()
     curses.endwin()
