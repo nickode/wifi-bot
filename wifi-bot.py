@@ -65,7 +65,7 @@ screen.keypad(True)
 try:
     while True:
         char = screen.getch()
-        
+        print(char)
         if char == ord('q'):
             break
         elif char == curses.KEY_UP:
@@ -80,7 +80,7 @@ try:
         elif char == curses.KEY_LEFT:
             rotateLeft()
             break
-        elif char == 10:
+        elif char == -1:
             stopMove()
             break
 finally:
