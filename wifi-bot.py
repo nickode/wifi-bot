@@ -36,6 +36,7 @@ def moveForward():
     GPIO.output(FRONT_LEFT_FORWARD, True)
     GPIO.output(BACK_RIGHT_FORWARD, True)
     GPIO.output(BACK_LEFT_FORWARD, True)
+
 def moveBackward():
     GPIO.output(FRONT_RIGHT_BACKWARD, True)
     GPIO.output(FRONT_LEFT_BACKWARD, True)
