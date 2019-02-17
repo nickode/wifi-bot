@@ -45,15 +45,15 @@ def moveBackward():
 
 def rotateRight():
     GPIO.output(FRONT_LEFT_FORWARD, True)
-	GPIO.output(BACK_LEFT_FORWARD, True)
-	GPIO.output(FRONT_RIGHT_BACKWARD, True)
-	GPIO.output(BACK_RIGHT_BACKWARD, True)
+    GPIO.output(BACK_LEFT_FORWARD, True)
+    GPIO.output(FRONT_RIGHT_BACKWARD, True)
+    GPIO.output(BACK_RIGHT_BACKWARD, True)
 
 def rotateLeft():
     GPIO.output(FRONT_RIGHT_FORWARD, True)
-	GPIO.output(BACK_RIGHT_FORWARD, True)
-	GPIO.output(FRONT_LEFT_BACKWARD, True)
-	GPIO.output(BACK_LEFT_BACKWARD, True)
+    GPIO.output(BACK_RIGHT_FORWARD, True)
+    GPIO.output(FRONT_LEFT_BACKWARD, True)
+    GPIO.output(BACK_LEFT_BACKWARD, True)
 
 
 
