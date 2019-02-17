@@ -32,24 +32,28 @@ def stopMove():
     GPIO.output(9,False)
 
 def moveForward():
+    stopMove()
     GPIO.output(FRONT_RIGHT_FORWARD, True)
     GPIO.output(FRONT_LEFT_FORWARD, True)
     GPIO.output(BACK_RIGHT_FORWARD, True)
     GPIO.output(BACK_LEFT_FORWARD, True)
 
 def moveBackward():
+    stopMove()
     GPIO.output(FRONT_RIGHT_BACKWARD, True)
     GPIO.output(FRONT_LEFT_BACKWARD, True)
     GPIO.output(BACK_RIGHT_BACKWARD, True)
     GPIO.output(BACK_LEFT_BACKWARD, True)
 
 def rotateRight():
+    stopMove()
     GPIO.output(FRONT_LEFT_FORWARD, True)
     GPIO.output(BACK_LEFT_FORWARD, True)
     GPIO.output(FRONT_RIGHT_BACKWARD, True)
     GPIO.output(BACK_RIGHT_BACKWARD, True)
 
 def rotateLeft():
+    stopMove()
     GPIO.output(FRONT_RIGHT_FORWARD, True)
     GPIO.output(BACK_RIGHT_FORWARD, True)
     GPIO.output(FRONT_LEFT_BACKWARD, True)
@@ -80,7 +84,7 @@ try:
         elif char == curses.KEY_LEFT:
             rotateLeft()
             break
-        elif char == -1:
+        elif char == 10:
             stopMove()
             break
 finally:
