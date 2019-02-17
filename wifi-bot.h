@@ -1,14 +1,14 @@
 #pragma once
 
 //RPI3 WIRINGPI PIN NUMBERS FOR MOTORS
-const int FRONT_RIGHT_BACKWARD = 8;
-const int FRONT_RIGHT_FORWARD = 9;
-const int FRONT_LEFT_BACKWARD = 23;
-const int FRONT_LEFT_FORWARD = 0;
-const int BACK_RIGHT_BACKWARD = 2;
-const int BACK_RIGHT_FORWARD = 3;
-const int BACK_LEFT_BACKWARD = 12;
-const int BACK_LEFT_FORWARD = 13;
+const int FRONT_RIGHT_BACKWARD = 8; //2
+const int FRONT_RIGHT_FORWARD = 9; //3
+const int FRONT_LEFT_BACKWARD = 23; //13
+const int FRONT_LEFT_FORWARD = 0; //17
+const int BACK_RIGHT_BACKWARD = 2; //27
+const int BACK_RIGHT_FORWARD = 3; //22
+const int BACK_LEFT_BACKWARD = 12; //10
+const int BACK_LEFT_FORWARD = 13; //9
 
 //MOVEMENT FUNCTIONS
 int moveForward();
